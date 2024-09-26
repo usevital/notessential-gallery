@@ -1,0 +1,54 @@
+/* Apply a simple font and background */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #181818;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+b {
+  font-size: 24px;
+  margin-top: 20px;
+  display: block;
+}
+
+a {
+  color: #ff91a4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul a {
+  display: block;
+  padding: 10px;
+  background-color: #282828;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+ul a:hover {
+  background-color: #ff91a4;
+  color: #181818;
+}
+
+/* Center content vertically and horizontally */
+html, body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+br {
+  margin-bottom: 10px;
+}
