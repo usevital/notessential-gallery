@@ -9,15 +9,35 @@
   <body>
     <b>Gallery: Essential confirmed to be cause of crashes</b>
     <div class="gallery">
-      <img src="./images/image1.png" alt="Crash image 1">
-      <img src="./images/image2.png" alt="Crash image 2">
-      <img src="./images/image3.png" alt="Crash image 3">
-      <img src="./images/image4.png" alt="Crash image 4">
-      <img src="./images/image5.png" alt="Crash image 5">
-      <img src="./images/image6.png" alt="Crash image 6">
-      <img src="./images/image7.png" alt="Crash image 7">
-      <img src="./images/image8.png" alt="Crash image 8">
-      <img src="./images/image9.png" alt="Crash image 9">
+      <img src="./images/image1.png" alt="Crash image 1" onclick="openModal(this.src)">
+      <img src="./images/image2.png" alt="Crash image 2" onclick="openModal(this.src)">
+      <img src="./images/image3.png" alt="Crash image 3" onclick="openModal(this.src)">
+      <img src="./images/image4.png" alt="Crash image 4" onclick="openModal(this.src)">
+      <img src="./images/image5.png" alt="Crash image 5" onclick="openModal(this.src)">
+      <img src="./images/image6.png" alt="Crash image 6" onclick="openModal(this.src)">
+      <img src="./images/image7.png" alt="Crash image 7" onclick="openModal(this.src)">
+      <img src="./images/image8.png" alt="Crash image 8" onclick="openModal(this.src)">
+      <img src="./images/image9.png" alt="Crash image 9" onclick="openModal(this.src)">
     </div>
+
+    <div id="imgModal" class="modal" onclick="closeModal()">
+      <span class="modal-close">&times;</span>
+      <img id="modalImage">
+    </div>
+
+    <script>
+      // Function to open the modal
+      function openModal(imgSrc) {
+        const modal = document.getElementById("imgModal");
+        const modalImg = document.getElementById("modalImage");
+        modal.style.display = "flex";
+        modalImg.src = imgSrc;
+      }
+    
+      // Function to close the modal
+      function closeModal() {
+        document.getElementById("imgModal").style.display = "none";
+      }
+    </script>
   </body>
 </html>
