@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Attributions | NotEssential Gallery</title>
+		<link rel="stylesheet" type="text/css" href="./css/attributions.css">
+	</head>
+	<body>
+		<h1>Attributions</h1>
+		<p>This page lists the attributions and credits for contributors to the NotEssential gallery.</p>
+  
+		<div class="maintainer">
+			<h2>KTrain5369</h2>
+			<p>Main maintainer of the gallery.</p>
+			<div class="social-buttons">
+				<button onclick="toggleSocials('ktrain-bsky')">Bluesky</button>
+				<button onclick="toggleSocials('ktrain-github')">GitHub</button>
+				<button onclick="toggleSocials('ktrain-website')">Website</button>
+			</div>
+			<div class="social-info" id="ktrain-bsky">
+				<p>Bluesky: <a href="https://bsky.app/profile/ktrain5369.bsky.social" target="_blank">https://bsky.app/profile/ktrain5369.bsky.social</a></p>
+			</div>
+			<div class="social-info" id="ktrain-github">
+				<p>GitHub: <a href="https://github.com/KTrain5169" target="_blank">https://github.com/KTrain5169</a></p>
+			</div>
+			<div class="social-info" id="ktrain-website">
+				<p>Website: <a href="https://ktrain5169.github.io/" target="_blank">https://ktrain5169.github.io/</a></p>
+			</div>
+		</div>
+
+		<div class="contributor">
+			<h2>maskers</h2>
+			<div class="social-buttons">
+				<button onclick="toggleSocials('maskers-github')">GitHub</button>
+			</div>
+			<div class="social-info" id="maskers-github">
+				<p>GitHub: <a href="https://github.com/maskersss" target="_blank">https://github.com/maskersss</a></p>
+			</div>
+		</div>
+		
+		<div class="contributor">
+			<h2>blryface</h2>
+			<p>A maintainer of the main NotEssential site</p>
+			<div class="social-buttons">
+				<button onclick="toggleSocials('blryface-github')">GitHub</button>
+				<button onclick="toggleSocials('blryface-website')">Website</button>
+			</div>
+			<div class="social-info" id="blryface-github">
+				<p>GitHub: <a href="https://github.com/maskersss" target="_blank">https://github.com/maskersss</a></p>
+			</div>
+			<div class="social-info" id="blryface-website">
+				<p>Website: <a href="https://blurry.gay/" target="_blank">https://blurry.gay/</a></p>
+			</div>
+		</div>
+
+  <!-- Add more attributions similarly -->
+
+		<script>
+			// Function to toggle visibility of the social info boxes
+			function toggleSocials(id) {
+				var element = document.getElementById(id);
+				if (element.style.display === "none" || element.style.display === "") {
+					element.style.display = "block";
+				} else {
+					element.style.display = "none";
+				}
+			}
+		</script>
+	</body>
+</html>

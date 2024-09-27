@@ -7,17 +7,52 @@
     <link rel="stylesheet" type="text/css" href="./css/gallery.css">
   </head>
   <body>
-    <b>Gallery: Essential confirmed to be cause of crashes</b>
+    <b>Gallery: Essential confirmed to be cause of issues</b>
     <div class="gallery">
-      <img src="./images/image1.png" alt="Crash image 1" onclick="openModal(this.src)">
-      <img src="./images/image2.png" alt="Crash image 2" onclick="openModal(this.src)">
-      <img src="./images/image3.png" alt="Crash image 3" onclick="openModal(this.src)">
-      <img src="./images/image4.png" alt="Crash image 4" onclick="openModal(this.src)">
-      <img src="./images/image5.png" alt="Crash image 5" onclick="openModal(this.src)">
-      <img src="./images/image6.png" alt="Crash image 6" onclick="openModal(this.src)">
-      <img src="./images/image7.png" alt="Crash image 7" onclick="openModal(this.src)">
-      <img src="./images/image8.png" alt="Crash image 8" onclick="openModal(this.src)">
-      <img src="./images/image9.png" alt="Crash image 9" onclick="openModal(this.src)">
+		<figure>
+			<img src="./images/image1.png" alt="Crash image 1" onclick="openModal(this.src)">
+			<figcaption>Provided by KTrain5369</figcaption>
+		</figure>
+		<figure>
+			<img src="./images/image2.png" alt="Crash image 2" onclick="openModal(this.src)">
+			<figcaption>Provided by KTrain5369</figcaption>
+		</figure>
+		<figure>
+			<img src="./images/image3.png" alt="Crash image 3" onclick="openModal(this.src)">
+			<figcaption>Provided by KTrain5369</figcaption>
+		</figure>
+		<figure>
+			<img src="./images/image4.png" alt="Crash image 4" onclick="openModal(this.src,)">
+			<figcaption>Provided by KTrain5369</figcaption>
+		</figure>
+		<figure>
+			<img src="./images/image5.png" alt="Crash image 5" onclick="openModal(this.src)">
+			<figcaption>Provided by KTrain5369</figcaption>
+		</figure>
+		<figure>
+			<img src="./images/image6.png" alt="Crash image 6" onclick="openModal(this.src)">
+			<figcaption>Provided by KTrain5369</figcaption>
+		</figure>
+		<figure>
+			<img src="./images/image7.png" alt="Crash image 7" onclick="openModal(this.src)">
+			<figcaption>Provided by KTrain5369</figcaption>
+		</figure>
+		<figure>
+			<img src="./images/image8.png" alt="Crash image 8" onclick="openModal(this.src)">
+			<figcaption>Provided by KTrain5369</figcaption>
+		</figure>
+		<figure>
+			<img src="./images/image9.png" alt="Crash image 9" onclick="openModal(this.src)">
+			<figcaption>Provided by KTrain5369</figcaption>
+		</figure>
+		<figure>
+			<img src="./images/image10.png" alt="Crash image 10" onclick="openModal(this.src)">
+			<figcaption>Provided by maskers</figcaption>
+		</figure>
+		<figure>
+			<img src="./images/image11.png" alt="Crash image 11" onclick="openModal(this.src)">
+			<figcaption>Provided by blryface</figcaption>
+		</figure>
     </div>
 
     <div id="imgModal" class="modal" onclick="closeModal()">
@@ -26,18 +61,20 @@
     </div>
 
     <script>
-      // Function to open the modal
-      function openModal(imgSrc) {
-        const modal = document.getElementById("imgModal");
-        const modalImg = document.getElementById("modalImage");
-        modal.style.display = "flex";
-        modalImg.src = imgSrc;
-      }
-    
-      // Function to close the modal
-      function closeModal() {
-        document.getElementById("imgModal").style.display = "none";
-      }
-    </script>
+		// Function to open the modal and pass the image and caption
+		function openModal(imgSrc, captionText) {
+			const modal = document.getElementById("imgModal");
+			const modalImg = document.getElementById("modalImage");
+			const modalCaption = document.getElementById("modalCaption");
+			modal.style.display = "flex";
+			modalImg.src = imgSrc;
+			modalCaption.innerText = captionText;
+		}
+
+		// Function to close the modal
+		function closeModal() {
+			document.getElementById("imgModal").style.display = "none";
+		}
+</script>
   </body>
 </html>

@@ -1,0 +1,114 @@
+/* General Page Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1c1c1c; /* Dark background to match site theme */
+  color: #f0f0f0; /* Light text color */
+  padding: 20px;
+  margin: 0;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #008cff; /* Blue accent color */
+  font-size: 2em;
+}
+
+p {
+  line-height: 1.6;
+  color: #cccccc;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+/* Attribution section styling */
+.maintainer {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #00F;
+  background-color: #292929; /* Matching the dark theme */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  max-width: 700px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.contributor {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #333;
+  background-color: #292929;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  max-width: 700px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+h2 {
+  color: #008cff; /* Blue accent color for person names */
+}
+
+.social-buttons {
+  margin-top: 10px;
+}
+
+.social-buttons button {
+  background-color: #008cff; /* Blue for buttons */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.social-buttons button:hover {
+  background-color: #0076d1; /* Slightly darker blue on hover */
+}
+
+.social-info {
+  display: none;
+  background-color: #2f2f2f;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: #cccccc;
+  transition: opacity 0.3s ease;
+}
+
+.social-info a {
+  color: #008cff;
+  text-decoration: none;
+}
+
+.social-info a:hover {
+  color: #0076d1;
+  text-decoration: underline;
+}
+
+/* Mobile and responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .person {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .social-buttons button {
+    font-size: 0.9em;
+    padding: 8px 15px;
+  }
+}

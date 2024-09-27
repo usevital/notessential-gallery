@@ -77,3 +77,25 @@ b {
   color: white;
   cursor: pointer;
 }
+
+/* Styling for the figure and figcaption */
+figure {
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Modal styles for the caption */
+.modal figcaption {
+  margin-top: 15px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
