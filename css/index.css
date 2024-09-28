@@ -22,7 +22,7 @@ b {
 
 /* Styling for links */
 a {
-  color: #ff91a4;
+  color: #00F;
   text-decoration: none;
   font-size: 18px;
 }
@@ -54,7 +54,7 @@ ul li:hover {
 }
 
 ul li a {
-  color: inherit; /* Match the text color of the li */
+  color: white; /* Match the text color of the li */
 }
 
 ul li a:hover {
