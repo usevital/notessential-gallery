@@ -24,7 +24,7 @@ p {
 .maintainer {
   margin-bottom: 30px;
   padding: 20px;
-  border: 1px solid #00F;
+/*border: 1px solid #00F;   why */
   background-color: #292929; /* Matching the dark theme */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
