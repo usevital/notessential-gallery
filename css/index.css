@@ -22,7 +22,7 @@ b {
 
 /* Styling for links */
 a {
-  color: #00F;
+  color: #4040ff; /* who tf decided #00F was good IN A BLACK BACKGROUND */
   text-decoration: none;
   font-size: 18px;
 }
@@ -49,11 +49,11 @@ ul li {
 
 /* Change background color on hover */
 ul li:hover {
-  background-color: #00F;
+  background-color: #2e2e2e; /* why were we obsessed with blue */
   color: #181818;
 }
 
-ul li a {
+ul li a { /* u ii a i u iii a i */
   color: white; /* Match the text color of the li */
 }
 

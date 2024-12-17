@@ -20,7 +20,7 @@ p {
   text-align: center;
 }
 
-/* Attribution section styling */
+/* Attribution section styling */    /* wtf does this do here */
 .maintainer {
   margin-bottom: 30px;
   padding: 20px;
@@ -46,7 +46,7 @@ p {
 }
 
 h2 {
-  color: #008cff; /* Blue accent color for person names */
+  color: #008cff; /* Blue accent color for people's names */
 }
 
 .social-buttons {
