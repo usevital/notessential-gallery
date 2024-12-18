@@ -1,80 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crashes | Notessential Gallery</title> <!-- Titles shouldn't be so huge -->
-    <link rel="stylesheet" type="text/css" href="./css/gallery.css">
-  </head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Crashes | Notessential Gallery</title> <!-- Titles shouldn't be so huge -->
+		<script src="./js/gallery.js" defer></script>
+		<link rel="stylesheet" type="text/css" href="./css/gallery.css">
+	</head>
   <body>
     <b>Gallery: Crashes and other issues where essential was confirmed to be the problems' source</b>
     <div class="gallery">
 		<figure>
-			<img src="./images/crashes/image1.png" alt="Crash/issue image 1" onclick="openModal(this.src)">
+			<img src="./images/crashes/image1.png" alt="Crash/issue image 1">
 			<figcaption>Provided by KTrain5369</figcaption>
 		</figure>
 		<figure>
-			<img src="./images/crashes/image2.png" alt="Crash/issue image 2" onclick="openModal(this.src)">
+			<img src="./images/crashes/image2.png" alt="Crash/issue image 2">
 			<figcaption>Provided by KTrain5369</figcaption>
 		</figure>
 		<figure>
-			<img src="./images/crashes/image3.png" alt="Crash/issue image 3" onclick="openModal(this.src)">
+			<img src="./images/crashes/image3.png" alt="Crash/issue image 3">
 			<figcaption>Provided by KTrain5369</figcaption>
 		</figure>
 		<figure>
-			<img src="./images/crashes/image4.png" alt="Crash/issue image 4" onclick="openModal(this.src,)">
+			<img src="./images/crashes/image4.png" alt="Crash/issue image 4">
 			<figcaption>Provided by KTrain5369</figcaption>
 		</figure>
 		<figure>
-			<img src="./images/crashes/image5.png" alt="Crash/issue image 5" onclick="openModal(this.src)">
+			<img src="./images/crashes/image5.png" alt="Crash/issue image 5">
 			<figcaption>Provided by KTrain5369</figcaption>
 		</figure>
 		<figure>
-			<img src="./images/crashes/image6.png" alt="Crash/issue image 6" onclick="openModal(this.src)">
+			<img src="./images/crashes/image6.png" alt="Crash/issue image 6">
 			<figcaption>Provided by KTrain5369</figcaption>
 		</figure>
 		<figure>
-			<img src="./images/crashes/image7.png" alt="Crash/issue image 7" onclick="openModal(this.src)">
+			<img src="./images/crashes/image7.png" alt="Crash/issue image 7">
 			<figcaption>Provided by KTrain5369</figcaption>
 		</figure>
 		<figure>
-			<img src="./images/crashes/image8.png" alt="Crash/issue image 8" onclick="openModal(this.src)">
+			<img src="./images/crashes/image8.png" alt="Crash/issue image 8">
 			<figcaption>Provided by KTrain5369</figcaption>
 		</figure>
 		<figure>
-			<img src="./images/crashes/image9.png" alt="Crash/issue image 9" onclick="openModal(this.src)">
+			<img src="./images/crashes/image9.png" alt="Crash/issue image 9">
 			<figcaption>Provided by KTrain5369</figcaption>
 		</figure>
 		<figure>
-			<img src="./images/crashes/image10.png" alt="Crash/issue image 10" onclick="openModal(this.src)">
+			<img src="./images/crashes/image10.png" alt="Crash/issue image 10">
 			<figcaption>Provided by maskers</figcaption>
 		</figure>
 		<figure>
-			<img src="./images/crashes/image11.png" alt="Crash/issue image 11" onclick="openModal(this.src)">
+			<img src="./images/crashes/image11.png" alt="Crash/issue image 11">
 			<figcaption>Provided by ???</figcaption>
 		</figure>
     </div>
 
-    <div id="imgModal" class="modal" onclick="closeModal()">
-      <span class="modal-close">&times;</span>
-      <img id="modalImage">
-    </div>
-
-    <script>
-		// Function to open the modal and pass the image and caption
-		function openModal(imgSrc, captionText) {
-			const modal = document.getElementById("imgModal");
-			const modalImg = document.getElementById("modalImage");
-			const modalCaption = document.getElementById("modalCaption");
-			modal.style.display = "flex";
-			modalImg.src = imgSrc;
-			modalCaption.innerText = captionText;
-		}
-
-		// Function to close the modal
-		function closeModal() {
-			document.getElementById("imgModal").style.display = "none";
-		}
-</script>
+		<div id="imgModal" class="modal">
+			<span class="modal-close">&times;</span>
+			<img src="about:blank" id="modalImage"/>
+			<span id="modalCaption"></span>
+		</div>
   </body>
 </html>
