@@ -35,15 +35,12 @@ a:hover {
 ul {
   list-style: none;
   padding: 0;
-  margin: 20px 0;
 }
 
 /* Style the list items */
 ul li {
   background-color: #282828;
   border-radius: 5px;
-  padding: 10px;
-  margin: 10px 0;
   transition: background-color 0.3s ease;
 }
 
@@ -54,7 +51,9 @@ ul li:hover {
 }
 
 ul li a { /* u ii a i u iii a i */
-  color: white; /* Match the text color of the li */
+  color: inherit; /* Inherits the colour from li */
+  display: block; /* Ensures that padding actually works */
+  padding: 10px;
 }
 
 ul li a:hover {
@@ -74,4 +73,8 @@ html, body {
 
 br {
   margin-bottom: 10px;
+}
+
+h1,h2,h3 {
+	margin-bottom: 0.25em;
 }
