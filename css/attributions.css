@@ -13,6 +13,10 @@ h1, h2 {
   font-size: 2em;
 }
 
+h2 {
+  margin-top: 0.15em; /* Visually looks nicer */
+}
+
 p {
   line-height: 1.6;
   color: #cccccc;
@@ -21,35 +25,31 @@ p {
 }
 
 /* Attribution section styling */    /* wtf does this do here */
-.maintainer {
-  margin-bottom: 30px;
+.contributor, .maintainer {
   padding: 20px;
-/*border: 1px solid #00F;   why */
-  background-color: #292929; /* Matching the dark theme */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  background-color: #292929; /* Matching the dark theme */
   max-width: 700px;
   margin: 20px auto;
   text-align: center;
+}
+
+/*
+.maintainer {
+  border: 1px solid #00F;
 }
 
 .contributor {
-  margin-bottom: 30px;
-  padding: 20px;
   border: 1px solid #333;
-  background-color: #292929;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-  max-width: 700px;
-  margin: 20px auto;
-  text-align: center;
 }
-
-h2 {
-  color: #008cff; /* Blue accent color for people's names */
-}
+*/
 
 .social-buttons {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  gap: 10px;
   margin-top: 10px;
 }
 
@@ -58,7 +58,6 @@ h2 {
   color: #fff;
   border: none;
   padding: 10px 20px;
-  margin: 5px;
   cursor: pointer;
   border-radius: 5px;
   font-size: 1em;
@@ -69,24 +68,12 @@ h2 {
   background-color: #0076d1; /* Slightly darker blue on hover */
 }
 
-.social-info {
-  display: none;
-  background-color: #2f2f2f;
-  padding: 15px;
-  border-radius: 5px;
-  margin-top: 10px;
-  color: #cccccc;
-  transition: opacity 0.3s ease;
+.social-buttons a {
+  display: block;
 }
 
-.social-info a {
-  color: #008cff;
-  text-decoration: none;
-}
-
-.social-info a:hover {
-  color: #0076d1;
-  text-decoration: underline;
+a > button {
+  margin: 0;
 }
 
 /* Mobile and responsive adjustments */
