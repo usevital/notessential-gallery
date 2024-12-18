@@ -51,7 +51,7 @@ ul li:hover {
 }
 
 ul li a { /* u ii a i u iii a i */
-  color: inherit; /* Inherits the colour from li */
+  color: white;
   display: block; /* Ensures that padding actually works */
   padding: 10px;
 }
